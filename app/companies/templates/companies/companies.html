@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Companies</title>
+</head>
+<body id="home">
+  <h1>Companies:</h1>
+  <ul>
+    {% for company in companies %}
+      <li>{{ company.name }}</li>
+    {% empty %}
+      <li><h4>No companies</h4></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
