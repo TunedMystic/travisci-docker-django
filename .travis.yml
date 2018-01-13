@@ -6,6 +6,7 @@ install:
 before_script:
   - cd app
   - python manage.py makemigrations --check
+  - python manage.py migrate
 script:
   - python manage.py test
 notifications:
