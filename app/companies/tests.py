@@ -13,7 +13,7 @@ class CompaniesTestCase(TestCase):
     def test_company_creation(self):
         data = {
             'name': 'TEST-COMPANY',
-            'address': '5 Main street'
+            'address': '5 Main street, New York, NY'
         }
         company = Company.objects.create(**data)
         self.assertEqual(company.name, data['name'])
